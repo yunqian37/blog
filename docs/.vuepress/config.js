@@ -37,6 +37,9 @@ module.exports = {
           ]
         },
       ],
+      "/Other/":[
+        {title:'命令行',path:'command'},
+      ],
       "/Question/":[
         {title:'Html',path:'Html/'},
         {title:'Css',path:'Css/'},

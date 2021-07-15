@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "docs:dev":"vuepress dev docs",
-    "docs:build":"vuepress build docs",
-    "build":"vuepress build docs",
-    "deploy":"bash deploy.sh"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
   },
   "devDependencies": {
     "vuepress": "^1.8.2"
