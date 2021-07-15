@@ -1,1 +1,1 @@
-# 这里是js
+# 这里是javascript

@@ -1,7 +1,10 @@
 module.exports = {
-  title:'MoMo',
-  description:'yq的blog',
-  base: "/blog/",
+  title:'云轻',
+  description: '一个前端小菜鸡的学习之路',
+  base: "/",
+  head: [
+    ['link', {rel: 'icon', href: '/logo.png'}]
+  ],
   configureWebpack: {
     resolve: {
       alias: {
@@ -12,27 +15,20 @@ module.exports = {
   themeConfig: {
     nav: [
       {text: 'Home', link: '/'},
-      {text: 'HTML', link: '/HTML/'},
       {text: 'JS', link: '/JS/'},
-      {text: '学习笔记', link: '/Notes/'},
+      {text: 'Node', link: '/Node/'},
+      {text: '其他', link: '/Other/'},
     ],
     sidebar: {
-      "/Notes/":[
+      "/Node/":[
         {
-          title:'VUE 学习',
-          path:"vueStudy"
-        },
-        {
-          title:'react 学习',
-          path:"reactStudy"
-        },
-        {
-          title:'二级目录',
+          title:'深入浅出Node.js',
           children: [
-            ['VUE/','二级vue']
+            ['Book/srqcNodeJs/01chapter','01-Node简介'],
+            ['Book/srqcNodeJs/02chapter','02-模块机制'],
           ]
         },
-      ]
+      ],
     }
   }
 }
