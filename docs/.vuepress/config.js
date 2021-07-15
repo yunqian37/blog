@@ -18,6 +18,7 @@ module.exports = {
       {text: 'JS', link: '/JS/'},
       {text: 'Node', link: '/Node/'},
       {text: '其他', link: '/Other/'},
+      {text: '面试题', link: '/Question/'},
     ],
     sidebar: {
       "/Node/":[
@@ -26,9 +27,26 @@ module.exports = {
           children: [
             ['Book/srqcNodeJs/01chapter','01-Node简介'],
             ['Book/srqcNodeJs/02chapter','02-模块机制'],
+            ['Book/srqcNodeJs/03chapter','03-异步I/O'],
+          ]
+        },
+        {
+          title:'immoc视频学习笔记',
+          children: [
+            ['Video/basics/','基础入门'],
           ]
         },
       ],
+      "/Question/":[
+        {title:'Html',path:'Html/'},
+        {title:'Css',path:'Css/'},
+        {title:'JS',path:'JS/'},
+        {title:'Vue',path:'Vue/'},
+        {title:'React',path:'React/'},
+        {title:'Node',path:'Node/'},
+        {title:'Other',path:'Other/'},
+
+      ]
     }
   }
 }
