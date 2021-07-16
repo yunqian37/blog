@@ -21,6 +21,15 @@ module.exports = {
       {text: '面试题', link: '/Question/'},
     ],
     sidebar: {
+      "/JS/":[
+        {
+          title:'ECMAScript 6 入门教程',
+          children: [
+            ['Book/ryfES6/01chapter','01-let和const'],
+            ['Book/ryfES6/02chapter','02-解构赋值'],
+          ]
+        },
+      ],
       "/Node/":[
         {
           title:'深入浅出Node.js',
@@ -28,6 +37,7 @@ module.exports = {
             ['Book/srqcNodeJs/01chapter','01-Node简介'],
             ['Book/srqcNodeJs/02chapter','02-模块机制'],
             ['Book/srqcNodeJs/03chapter','03-异步I/O'],
+            ['Book/srqcNodeJs/04chapter','04-异步编程'],
           ]
         },
         {
@@ -48,7 +58,6 @@ module.exports = {
         {title:'React',path:'React/'},
         {title:'Node',path:'Node/'},
         {title:'Other',path:'Other/'},
-
       ]
     }
   }
