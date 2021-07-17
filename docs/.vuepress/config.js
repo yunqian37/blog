@@ -27,6 +27,8 @@ module.exports = {
           children: [
             ['Book/ryfES6/01chapter','01-let和const'],
             ['Book/ryfES6/02chapter','02-解构赋值'],
+            ['Book/ryfES6/03chapter','03-数值的扩展'],
+            ['Book/ryfES6/04chapter','04-函数的扩展'],
           ]
         },
       ],
