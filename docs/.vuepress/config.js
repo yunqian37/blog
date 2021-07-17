@@ -51,6 +51,7 @@ module.exports = {
       ],
       "/Other/":[
         {title:'命令行',path:'command'},
+        {title:'项目BUG及解决方案',path:'bug'},
       ],
       "/Question/":[
         {title:'Html',path:'Html/'},
