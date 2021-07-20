@@ -31,6 +31,9 @@ module.exports = {
             ['Book/ryfES6/04chapter','04-函数的扩展'],
             ['Book/ryfES6/05chapter','05-数组的扩展'],
             ['Book/ryfES6/06chapter','06-对象的扩展'],
+            ['Book/ryfES6/07chapter','07-对象的新增方法'],
+            ['Book/ryfES6/08chapter','08-运算符的扩展'],
+            ['Book/ryfES6/09chapter','09-Symbol'],
           ]
         },
       ],
