@@ -1,6 +1,6 @@
 module.exports = {
   title:'云轻',
-  description: '一个前端小菜鸡的学习之路',
+  description: 'Hello World',
   base: "/",
   head: [
     ['link', {rel: 'icon', href: '/logo.png'}]
@@ -34,6 +34,7 @@ module.exports = {
             ['Book/ryfES6/07chapter','07-对象的新增方法'],
             ['Book/ryfES6/08chapter','08-运算符的扩展'],
             ['Book/ryfES6/09chapter','09-Symbol'],
+            ['Book/ryfES6/10chapter','10-Set和Map数据结构'],
           ]
         },
       ],

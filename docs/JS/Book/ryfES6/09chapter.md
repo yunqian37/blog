@@ -131,3 +131,54 @@ console.log(Reflect.ownKeys(obj)) // ["c", Symbol(a), Symbol(b)]
 
 ### Symbol.for()、Symbol.keyFor()
 
+**Symbol.for：**接受一个字符串作为参数，搜索有没有该参数作为名称的Symbol值。如果有就返回这个Symbol值，否则就新建一个以该字符串为名称的Symbol值并将其注册到全局
+
+Symbol.for会被登记在全局环境中供搜索，Symbol()不会
+
++ Symbol.for会先检查给定的key是否已经存在，如果不存在才会新建一个值
+
++ Symbol没有登记机制每次调用都会返回一个不同的值
+
+```javascript
+let s1 = Symbol.for('foo')
+let s2 = Symbol.for('foo')
+console.log(s1 === s2) // true
+
+let s1 = Symbol('foo')
+let s2 = Symbol('foo')
+console.log(s1 === s2) // false
+
+let s1 = Symbol('foo')
+let s2 = Symbol.for('foo')
+console.log(s1 === s2) // false
+```
+
+**Symbol.keyFor()：**返回一个已登记的Symbol类型值的key
+
+```javascript
+let s1 = Symbol.for('foo')
+console.log(Symbol.keyFor(s1)) // foo
+
+// 未登记的Symbol值，返回undefined
+let s1 = Symbol('foo')
+console.log(Symbol.keyFor(s1)) // undefined
+```
+
+```javascript
+// Symbol.for为Symbol值登记的名字是全局环境的，不管有没有在全局环境运行
+function foo() {
+  return Symbol.for('bar')
+}
+let x = foo()
+let y = Symbol.for('bar')
+console.log(x === y) // true
+```
+
+### 模块的Singleton模式
+
+Singleton模式：调用一个类，任何时候返回的都是同一个实例
+
+### 内置的Symbol值
+
+ES6提供了11个内置的Symbol值，指向语言内部使用的方法
+
