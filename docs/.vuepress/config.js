@@ -35,6 +35,8 @@ module.exports = {
             ['Book/ryfES6/08chapter','08-运算符的扩展'],
             ['Book/ryfES6/09chapter','09-Symbol'],
             ['Book/ryfES6/10chapter','10-Set和Map数据结构'],
+            ['Book/ryfES6/11chapter','11-Proxy'],
+            ['Book/ryfES6/12chapter','13-Promise'],
           ]
         },
       ],
@@ -62,11 +64,21 @@ module.exports = {
       "/Question/":[
         {title:'Html',path:'Html/'},
         {title:'Css',path:'Css/'},
-        {title:'JS',path:'JS/'},
+        {
+          title:'JS',
+          children: [
+            ['JS/event','JS事件循环机制'],
+          ]
+        },
         {title:'Vue',path:'Vue/'},
         {title:'React',path:'React/'},
         {title:'Node',path:'Node/'},
-        {title:'Other',path:'Other/'},
+        {
+          title:'Other',
+          children: [
+            ['Other/url','从输入URL到页面加载的过程'],
+          ]
+        },
       ]
     }
   }
