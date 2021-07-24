@@ -1,6 +1,6 @@
 module.exports = {
   title:'云轻',
-  description: 'Hello World',
+  description: 'Hello World ～',
   base: "/",
   head: [
     ['link', {rel: 'icon', href: '/logo.png'}]
@@ -36,7 +36,9 @@ module.exports = {
             ['Book/ryfES6/09chapter','09-Symbol'],
             ['Book/ryfES6/10chapter','10-Set和Map数据结构'],
             ['Book/ryfES6/11chapter','11-Proxy'],
-            ['Book/ryfES6/12chapter','13-Promise'],
+            ['Book/ryfES6/12chapter','12-Promise'],
+            ['Book/ryfES6/13chapter','13-Iterator'],
+            ['Book/ryfES6/14chapter','14-Generator'],
           ]
         },
       ],
@@ -67,7 +69,7 @@ module.exports = {
         {
           title:'JS',
           children: [
-            ['JS/event','JS事件循环机制'],
+            ['JS/event','JS运行机制'],
           ]
         },
         {title:'Vue',path:'Vue/'},
