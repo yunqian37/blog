@@ -41,6 +41,12 @@ module.exports = {
             ['Book/ryfES6/14chapter','14-Generator'],
           ]
         },
+        {
+          title:'深入理解ES6',
+          children:[
+            ['Book/understandingEs6/01chapter','迭代器和生成器']
+          ]
+        }
       ],
       "/Node/":[
         {
