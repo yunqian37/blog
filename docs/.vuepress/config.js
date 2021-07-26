@@ -75,7 +75,8 @@ module.exports = {
         {
           title:'JS',
           children: [
-            ['JS/event','JS运行机制'],
+            ['JS/01chapter','JS运行机制'],
+            ['JS/02chapter','深拷贝与浅拷贝'],
           ]
         },
         {title:'Vue',path:'Vue/'},
