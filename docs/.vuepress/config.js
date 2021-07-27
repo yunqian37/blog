@@ -85,7 +85,8 @@ module.exports = {
         {
           title:'Other',
           children: [
-            ['Other/url','从输入URL到页面加载的过程'],
+            ['Other/01chapter','从输入URL到页面加载的过程'],
+            ['Other/02chapter','前端模块化'],
           ]
         },
       ]
