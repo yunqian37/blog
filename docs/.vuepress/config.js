@@ -77,6 +77,7 @@ module.exports = {
           children: [
             ['JS/01chapter','JS运行机制'],
             ['JS/02chapter','深拷贝与浅拷贝'],
+            ['JS/03chapter','防抖和节流'],
           ]
         },
         {title:'Vue',path:'Vue/'},
