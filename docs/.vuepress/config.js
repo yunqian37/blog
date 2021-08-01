@@ -45,7 +45,8 @@ module.exports = {
           title:'深入理解ES6',
           children:[
             ['Book/understandingEs6/01chapter','迭代器和生成器'],
-            ['Book/understandingEs6/02chapter','改进数组的功能']
+            ['Book/understandingEs6/02chapter','改进数组的功能'],
+            ['Book/understandingEs6/03chapter','Promise'],
           ]
         }
       ],
