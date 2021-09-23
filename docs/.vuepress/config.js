@@ -82,7 +82,12 @@ module.exports = {
             ['JS/03chapter','防抖和节流'],
           ]
         },
-        {title:'Vue',path:'Vue/'},
+        {
+          title:'Vue',
+          children: [
+            ['Vue/Project','Vue项目开发过程代码记录'],
+          ]
+        },
         {title:'React',path:'React/'},
         {title:'Node',path:'Node/'},
         {
