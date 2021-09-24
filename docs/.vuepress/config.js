@@ -86,6 +86,8 @@ module.exports = {
           title:'Vue',
           children: [
             ['Vue/Project','Vue项目开发过程代码记录'],
+            ['Vue/Knowledge','Vue知识点'],
+            ['Vue/mixins','混入'],
           ]
         },
         {title:'React',path:'React/'},
