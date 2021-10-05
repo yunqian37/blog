@@ -18,7 +18,7 @@ module.exports = {
       {text: 'JS', link: '/JS/'},
       {text: 'Node', link: '/Node/'},
       {text: '其他', link: '/Other/'},
-      {text: '面试题', link: '/Question/'},
+      {text: '汇总', link: '/Question/'},
     ],
     sidebar: {
       "/JS/":[
@@ -88,6 +88,7 @@ module.exports = {
             ['Vue/Project','Vue项目开发过程代码记录'],
             ['Vue/Knowledge','Vue知识点'],
             ['Vue/mixins','混入'],
+            ['Vue/vue3Project','vue3项目相关'],
           ]
         },
         {title:'React',path:'React/'},
