@@ -48,6 +48,12 @@ module.exports = {
             ['Book/understandingEs6/02chapter','改进数组的功能'],
             ['Book/understandingEs6/03chapter','Promise'],
           ]
+        },
+        {
+          title:'重学前端',
+          children:[
+            ['Book/CXQD/01chapter','js-类型'],
+          ]
         }
       ],
       "/Node/":[
