@@ -50,7 +50,7 @@ module.exports = {
           ]
         },
         {
-          title:'重学前端',
+          title:'重学前端-winter',
           children:[
             ['Book/CXQD/01chapter','js-类型'],
           ]
