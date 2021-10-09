@@ -18,7 +18,7 @@ module.exports = {
       {text: 'JS', link: '/JS/'},
       {text: 'Node', link: '/Node/'},
       {text: '其他', link: '/Other/'},
-      {text: '汇总', link: '/Question/'},
+      {text: '面试', link: '/Question/'},
     ],
     sidebar: {
       "/JS/":[
@@ -76,6 +76,17 @@ module.exports = {
       "/Other/":[
         {title:'命令行',path:'command'},
         {title:'项目BUG及解决方案',path:'bug'},
+        {
+          title:'Vue',
+          children: [
+            ['VUE/01chapter','jct项目相关'],
+            ['VUE/02chapter','vue3.0项目练习'],
+          ]
+        },
+        {
+          title:'React',
+          children: []
+        },
       ],
       "/Question/":[
         {title:'Html',path:'Html/'},
@@ -91,10 +102,7 @@ module.exports = {
         {
           title:'Vue',
           children: [
-            ['Vue/Project','Vue项目开发过程代码记录'],
-            ['Vue/Knowledge','Vue知识点'],
             ['Vue/mixins','混入'],
-            ['Vue/vue3Project','vue3项目相关'],
           ]
         },
         {title:'React',path:'React/'},
