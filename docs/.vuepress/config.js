@@ -103,6 +103,7 @@ module.exports = {
           title:'Vue',
           children: [
             ['Vue/mixins','混入'],
+            ['Vue/VirtualDOM','虚拟DOM'],
           ]
         },
         {title:'React',path:'React/'},
