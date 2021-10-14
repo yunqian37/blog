@@ -104,6 +104,7 @@ module.exports = {
           children: [
             ['Vue/mixins','混入'],
             ['Vue/VirtualDOM','虚拟DOM'],
+            ['Vue/LifecycleHooks','生命周期'],
           ]
         },
         {title:'React',path:'React/'},

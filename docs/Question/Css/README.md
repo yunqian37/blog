@@ -1,4 +1,4 @@
-### 盒子模型
+# 盒子模型
 
 盒子模型由四个部分组成：margin、border、padding、content(Html元素的内容)。
 
@@ -17,3 +17,34 @@ box-sizing属性值：
 ​	border-box：已经设定的宽高包含padding和border，这种盒子模型被称为IE盒子模型
 
 ​	inherit：从父元素继承box-sizing属性
+
+# 垂直居中布局
+
+```css
+/* flex布局 */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* flex布局 二 */
+.wrapper {
+  display: flex;
+}
+.inner {
+  margin: auto;
+}
+
+/* 定位 */
+.wrapper {
+  position: relative;
+}
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+```
+
