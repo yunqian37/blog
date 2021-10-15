@@ -105,6 +105,7 @@ module.exports = {
             ['Vue/mixins','混入'],
             ['Vue/VirtualDOM','虚拟DOM'],
             ['Vue/LifecycleHooks','生命周期'],
+            ['Vue/SSR','服务端渲染'],
           ]
         },
         {title:'React',path:'React/'},
