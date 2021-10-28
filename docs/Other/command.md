@@ -30,4 +30,11 @@ PreferredAuthentications publickey
 IdentityFile ~/.ssh/id_rsa_github
 ```
 
-# 终端操作
+# nvm
+**nvm安装：** brew install nvm (ios)	github搜索nvm-windows下载(windows)
+
+**查看当前所有node版本：** nvm list
+
+**安装指定版本：** nvm install 版本号
+
+**切换到指定版本：** nvm use --delete-prefix 版本号
