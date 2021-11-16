@@ -81,6 +81,7 @@ module.exports = {
           children: [
             ['VUE/01chapter','jct项目相关'],
             ['VUE/02chapter','vue3.0项目练习'],
+            ['VUE/03chapter','vue3.0+TS项目练习'],
           ]
         },
         {
