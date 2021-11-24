@@ -84,7 +84,7 @@ box-sizing属性值：
 
 + float的值不为none
 + position为absolute或fixed
-+ display的值为inline-block、table-cell、table-caption
++ display的值为flex、inline-block、table-cell、table-caption
 + overflow的值不为visible
 
 **使用场景：** 
@@ -108,14 +108,147 @@ box-sizing属性值：
 
 ```css
 /* 伪元素清除浮动 */
-.parent:after {
+.clearfix:after {
   content: '';
-  display: block;
-  height: 0;
-  visibility: hidden;
+  display: table;
   clear: both; /* 关键*/
 }
 ```
+
+
+
+# float布局
+
+**圣杯布局和双飞翼布局的目的：**
+
++ 三栏布局，中间一栏最先加载和渲染（内容最重要）
++ 两侧内容固定，中间内容随着宽度自适应
++ 一般用于pc网页
+
+**技术总结：** 
+
++ 使用float布局
++ 两侧使用margin负值，以便和中间内容横向重叠
++ 防止中间内容被两侧覆盖，一个用padding一个用margin
+
+
+
+#### 圣杯布局（padding）
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      min-width: 600px;
+    }
+    .header {
+      background-color: #CCC;
+    }
+    .footer {
+      background-color: #CCC;
+    }
+    .main {
+      padding-left: 200px;
+      padding-right: 150px;
+      overflow: hidden;
+    }
+    .column {
+      float: left;
+    }
+    .left {
+      width: 200px;
+      background-color: skyblue;
+      position: relative;
+      right: 200px;
+      margin-left: -100%;
+    }
+    .right {
+      width: 150px;
+      background-color: pink;
+      margin-right: -150px;
+    }
+    .center {
+      width: 100%;
+      background-color: #64d778;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">这里是header</div>
+    <div class="main">
+      <div class="center column">center</div>
+      <div class="left column">left</div>
+      <div class="right column">right</div>
+    </div>
+  <div class="footer">这里是footer</div>
+</body>
+</html>
+```
+
+
+
+#### 双飞翼布局（margin）
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      min-width: 600px;
+    }
+    .center {
+      background-color: #65d979;
+      width: 100%;
+    }
+    .centerWrapper {
+      margin-left: 200px;
+      margin-right: 150px;
+    }
+    .left {
+      width: 200px;
+      background-color: skyblue;
+      margin-left: -100%;
+    }
+    .right {
+      width: 150px;
+      background-color: pink;
+      margin-left: -150px;
+    }
+    .column {
+      float: left;
+    }
+  </style>
+</head>
+<body>
+    <div class="center column">
+      <div class="centerWrapper">center</div>
+    </div>
+    <div class="left column">left</div>
+    <div class="right column">right</div>
+</body>
+</html>
+```
+
+
 
 
 
