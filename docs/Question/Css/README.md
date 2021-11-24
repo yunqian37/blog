@@ -248,6 +248,58 @@ box-sizing属性值：
 </html>
 ```
 
+# 长度单位
+
+**px：** 绝对长度单位
+
+**em：**相对长度单位，相对于父元素
+
+**rem：** 相对长度单位，相对于根元素，常用于响应式布局
+
+
+
+# 网页视口尺寸
+
+**屏幕高度：** window.screen.height
+
+**网页视口高度：** window.innerHeight
+
+**body高度：** document.body.clientHeight
+
+
+
+# line-height
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-size: 30px;
+      /* 此时p的line-height为25px */
+      line-height: 25px; 
+      /* 此时p的line-height为40px */
+      line-height: 2; 
+      /* 此时p的line-height为30px */
+      line-height: 200%; 
+    }
+    p {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <p>123</p>
+</body>
+</html>
+```
+
+
 
 
 
