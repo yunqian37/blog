@@ -98,6 +98,7 @@ module.exports = {
             ['JS/01chapter','JS运行机制'],
             ['JS/02chapter','深拷贝与浅拷贝'],
             ['JS/03chapter','防抖和节流'],
+            ['JS/04chapter','原型'],
           ]
         },
         {
