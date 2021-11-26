@@ -99,6 +99,8 @@ module.exports = {
             ['JS/02chapter','深拷贝与浅拷贝'],
             ['JS/03chapter','防抖和节流'],
             ['JS/04chapter','原型'],
+            ['JS/05chapter','作用域'],
+            ['JS/06chapter','异步'],
           ]
         },
         {
