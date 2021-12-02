@@ -126,6 +126,7 @@ module.exports = {
             ['Other/01chapter','从输入URL到页面加载的过程'],
             ['Other/02chapter','前端模块化'],
             ['Other/03chapter','开发环境'],
+            ['Other/04chapter','Web-Api'],
           ]
         },
       ]
