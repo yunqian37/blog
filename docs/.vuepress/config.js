@@ -127,6 +127,7 @@ module.exports = {
             ['Other/02chapter','前端模块化'],
             ['Other/03chapter','开发环境'],
             ['Other/04chapter','Web-Api'],
+            ['Other/05chapter','手写代码'],
           ]
         },
       ]
