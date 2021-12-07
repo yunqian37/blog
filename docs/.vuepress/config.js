@@ -110,6 +110,7 @@ module.exports = {
             ['Vue/VirtualDOM','虚拟DOM'],
             ['Vue/LifecycleHooks','生命周期'],
             ['Vue/SSR','服务端渲染'],
+            ['Vue/imooc','慕课'],
           ]
         },
         {title:'React',path:'React/'},
