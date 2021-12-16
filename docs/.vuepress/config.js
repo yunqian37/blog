@@ -86,7 +86,9 @@ module.exports = {
         },
         {
           title:'React',
-          children: []
+          children: [
+            ['React/01chapter','react慕课学习'],
+          ]
         },
       ],
       "/Question/":[

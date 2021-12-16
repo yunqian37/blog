@@ -9,7 +9,7 @@ vue create 项目名称
 + TypeScript
 + Linter / Formatter
 
-
+然后都是默认 或 n
 
 ### 文件结构
 
